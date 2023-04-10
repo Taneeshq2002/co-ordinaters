@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           height:500px;
+           width:300px;
+            margin:40%;
+            margin-top:10%;
+          
+        }
+        .container1{
+           height:500px;
+           width:300px;
+            margin:40%;
+            margin-top:10%;
+          display:inline;
+        }
+       
+        .pic{
+            position:absolute;
+            z-index:1;
+        }
+        .pic:hover{
+             animation:myanim 30s ease-in;
+             animation-iteration-count: 1;
+           /*  box-shadow:0px 0px 70px green;*/
+        }
+        @keyframes myanim{
+            
+          2%{z-index:-1;
+        }
+       
+        }
+        .demo{
+            height:500px;
+            width:300px;
+            background-color: black;
+            opacity:0.6;
+            color:white;
+            
+        }
+        .info{
+            position:relative;
+            top:250px;
+            left:100px;
+            background-color: black;
+            
+            height:250px;
+            width:200px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="capy.jpg" class="pic" height=500px width=300px alt="image"/>
+        <div class="demo">
+            <p class="info">My name is XYZ<br>
+             I am abc in ACM</p>
+        </div>
+        <p>Hover for information</p>
+    </div>
+
+</body>
+</html>
